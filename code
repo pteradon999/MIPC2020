@@ -1,0 +1,46 @@
+public class jstart {
+    public static void main (String args[]){
+        System.out.println("Hello World");
+
+
+    }
+
+}
+
+public class jcycle {
+    public static void main (String args[]){
+        String p = new String();
+        for (int i =1; i<10;i++){
+            System.out.println(i);
+        }
+    }
+}
+import java.util.Scanner;
+
+public class jif {
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("IF YOU WANT TO RUN CYCLE TYPE YES");
+        String reply  = scanner.next().toUpperCase();
+        if (reply.equals("YES")){
+            for (int i =1; i<10;i++){
+                System.out.println(i);
+            }
+        } else {
+            System.out.println("Operation aborted");
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class jread {
+    public static void main (String args[]){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String username = scanner.next();
+        System.out.println("Enter your age");
+        int age = scanner.nextInt();
+        System.out.println(String.format("%s,your age is %d", username, age));
+    }
+}
