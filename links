@@ -1,3 +1,15 @@
 https://habr.com/ru/post/432548/
 https://javarush.ru/groups/posts/504-sozdanie-telegram-bota-na-java-ot-idei-do-deploja
 https://habr.com/ru/sandbox/111328/
+
+Live Demo
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class HelloWorld { 
+   public static void main(String[] args) { 
+      Calendar now = Calendar.getInstance();
+      System.out.println(now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE));
+   }
+}
